@@ -1,0 +1,70 @@
+/* Generated automatically by the program `genconstants'
+   from the machine description file `md'.  */
+
+#ifndef GCC_INSN_CONSTANTS_H
+#define GCC_INSN_CONSTANTS_H
+
+
+enum unspec {
+  UNSPEC_IPREFETCH = 0,
+  UNSPEC_FREST = 1,
+  UNSPEC_FRSQEST = 2,
+  UNSPEC_FI = 3,
+  UNSPEC_EXTEND_CMP = 4,
+  UNSPEC_CG = 5,
+  UNSPEC_CGX = 6,
+  UNSPEC_ADDX = 7,
+  UNSPEC_BG = 8,
+  UNSPEC_BGX = 9,
+  UNSPEC_SFX = 10,
+  UNSPEC_FSM = 11,
+  UNSPEC_HBR = 12,
+  UNSPEC_NOP = 13,
+  UNSPEC_CONVERT = 14,
+  UNSPEC_SELB = 15,
+  UNSPEC_SHUFB = 16,
+  UNSPEC_CPAT = 17,
+  UNSPEC_CNTB = 18,
+  UNSPEC_SUMB = 19,
+  UNSPEC_FSMB = 20,
+  UNSPEC_FSMH = 21,
+  UNSPEC_GBB = 22,
+  UNSPEC_GBH = 23,
+  UNSPEC_GB = 24,
+  UNSPEC_AVGB = 25,
+  UNSPEC_ABSDB = 26,
+  UNSPEC_ORX = 27,
+  UNSPEC_HEQ = 28,
+  UNSPEC_HGT = 29,
+  UNSPEC_HLGT = 30,
+  UNSPEC_STOP = 31,
+  UNSPEC_STOPD = 32,
+  UNSPEC_SET_INTR = 33,
+  UNSPEC_FSCRRD = 34,
+  UNSPEC_FSCRWR = 35,
+  UNSPEC_MFSPR = 36,
+  UNSPEC_MTSPR = 37,
+  UNSPEC_RDCH = 38,
+  UNSPEC_RCHCNT = 39,
+  UNSPEC_WRCH = 40,
+  UNSPEC_SPU_REALIGN_LOAD = 41,
+  UNSPEC_SPU_MASK_FOR_LOAD = 42,
+  UNSPEC_DFTSV = 43,
+  UNSPEC_FLOAT_EXTEND = 44,
+  UNSPEC_FLOAT_TRUNCATE = 45,
+  UNSPEC_SP_SET = 46,
+  UNSPEC_SP_TEST = 47
+};
+#define NUM_UNSPEC_VALUES 48
+extern const char *const unspec_strings[];
+
+enum unspecv {
+  UNSPECV_BLOCKAGE = 0,
+  UNSPECV_LNOP = 1,
+  UNSPECV_NOP = 2,
+  UNSPECV_SYNC = 3
+};
+#define NUM_UNSPECV_VALUES 4
+extern const char *const unspecv_strings[];
+
+#endif /* GCC_INSN_CONSTANTS_H */

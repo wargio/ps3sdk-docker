@@ -1,0 +1,13 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+zipcmp=/usr/local/ps3dev/portlibs/ppu/bin/zipcmp
+
+Name: libzip
+Description: library for handling zip archives
+Version: 0.9.3
+Libs: -L${libdir} -lzip -lz 
+Cflags: -I${includedir}
+

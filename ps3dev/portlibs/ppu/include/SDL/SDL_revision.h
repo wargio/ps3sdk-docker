@@ -1,0 +1,2 @@
+#define SDL_REVISION "1c342e3"
+#define SDL_REVISION_NUMBER 1c342e3
