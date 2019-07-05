@@ -20,3 +20,17 @@ To build the ps3dev sdk i used docker psl1ght/psl1ght
 	- [tiny3D](https://github.com/wargio/tiny3D) version v2
 	- [ps3soundlib](https://github.com/wargio/ps3soundlib) version v2
 
+## How to build SDK base:
+
+```bash
+git clone --single-branch --branch base --depth=1 https://github.com/wargio/ps3sdk-docker.git
+docker build --rm . -t ps3sdk:base
+```
+
+## How to build SDK complete:
+
+```bash
+git clone --single-branch --branch master --depth=1 https://github.com/wargio/ps3sdk-docker.git
+docker build --rm . -t ps3sdk:complete
+```
+
