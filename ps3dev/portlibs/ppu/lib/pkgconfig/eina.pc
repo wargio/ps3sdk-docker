@@ -1,0 +1,12 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: Eina
+Description: A Library that implements fast data types and miscellaneous tools
+Requires.private:  escape
+Version: 1.7.99.0
+Libs: -L${libdir} -leina 
+Libs.private:   -lm
+Cflags: -I${includedir}/eina-1 -I${includedir}/eina-1/eina

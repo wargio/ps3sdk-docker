@@ -1,0 +1,13 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+pkgdatadir=${prefix}/share/elementary
+themes=${pkgdatadir}/themes
+
+Name: elementary
+Description: Mobile device touchscreen widget library
+Requires.private: ecore-sdl >= 1.6.99 ecore-psl1ght >= 1.6.99 ecore-con >= 1.6.99 ecore-imf >= 1.6.99 edje >= 1.6.99 ecore-file >= 1.6.99 ecore-evas >= 1.6.99 ecore >= 1.6.99 evas >= 1.6.99 eet >= 1.6.99 eina >= 1.6.99 
+Version: 1.7.99.0
+Libs: -L${libdir} -lelementary -lm -L/usr/local/ps3dev/portlibs/ppu/lib -lecore_file -lecore_con -lcares -lcurl -lpolarssl -ledje -lecore_imf_evas -llua -lembryo -lecore_evas -lecore_imf -lecore_psl1ght -lgem -lcamera -lspurs -lecore_sdl -lecore_input_evas -lecore_input -levas -lGL -lEGL -lstdc++ -lecore -lpng14 -leet -ljpeg -lSDL -lgcm_sys -lrsx -lsysutil -lrt -llv2 -lio -laudio -lfontconfig -lexpat -lfreetype -leina -lz -lescape -lm -lnet -lsysmodule -liberty         -L/usr/local/ps3dev/portlibs/ppu/lib -lecore_imf -lecore -leina -lescape -lm -lnet -lsysmodule -liberty   -L/usr/local/ps3dev/portlibs/ppu/lib -lecore_con -lcares -lcurl -lpolarssl -lsysutil -leet -ljpeg -lecore -lz -leina -lescape -lm -lnet -lsysmodule -liberty  
+Cflags: -I${includedir}/elementary-1

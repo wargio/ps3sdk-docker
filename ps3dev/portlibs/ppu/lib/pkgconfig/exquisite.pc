@@ -1,0 +1,12 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: exquisite
+Description: Library and tools to build splash screen using edje
+Requires.private:    evas >= 1.0.0    edje >= 1.0.0
+Version: 1.0.0
+Libs: -L${libdir} -lexquisite
+Libs.private: -L/usr/local/ps3dev/portlibs/ppu/lib -ledje -lecore_imf_evas -llua -lembryo -lecore_evas -lecore_imf -lecore_psl1ght -lgem -lcamera -lspurs -lecore_sdl -lecore_input_evas -lecore_input -levas -lGL -lEGL -lstdc++ -lecore -lpng14 -leet -ljpeg -lSDL -lgcm_sys -lrsx -lsysutil -lrt -llv2 -lio -laudio -lfontconfig -lexpat -lfreetype -leina -lz -lescape -lm -lnet -lsysmodule -liberty  
+Cflags: -I${includedir}/exquisite-1

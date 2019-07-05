@@ -43,6 +43,7 @@ typedef struct {
   long   (*tell_func)  (void *datasource);
 } ov_callbacks;
 
+#if 0
 #ifndef OV_EXCLUDE_STATIC_CALLBACKS
 
 /* a few sets of convenient callbacks, especially for use under
@@ -99,7 +100,7 @@ static ov_callbacks OV_CALLBACKS_STREAMONLY_NOCLOSE = {
   (int (*)(void *))                             NULL,
   (long (*)(void *))                            NULL
 };
-
+#endif
 #endif
 
 #define  NOTOPEN   0

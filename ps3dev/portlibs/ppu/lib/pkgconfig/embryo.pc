@@ -1,0 +1,15 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}/embryo
+embryoincludedir=${datarootdir}/include
+
+Name: embryo
+Description: A small virtual machine engine and bytecode compiler
+Requires.private: 
+Version: 1.7.99.0
+Libs: -L${libdir} -lembryo
+Libs.private: -liberty -lm
+Cflags: -I${includedir}/embryo-1

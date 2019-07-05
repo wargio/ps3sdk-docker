@@ -1,0 +1,11 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: ecore-input
+Description: E core library, Input module
+Requires.private: ecore >= 1.6.99 eina >= 1.6.99 
+Version: 1.7.99.0
+Libs: -L${libdir} -lecore_input
+Cflags: -I${includedir}/ecore-1

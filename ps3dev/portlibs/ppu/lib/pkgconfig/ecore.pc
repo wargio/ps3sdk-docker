@@ -1,0 +1,12 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: ecore
+Description: Ecore event abstraction library
+Requires.private: eina >= 1.6.99 escape 
+Version: 1.7.99.0
+Libs: -L${libdir} -lecore -L/usr/local/ps3dev/portlibs/ppu/lib -leina -lescape -lm -lnet -lsysmodule -liberty  
+Libs.private: -lm
+Cflags: -I${includedir}/ecore-1

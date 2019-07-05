@@ -1,0 +1,11 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: ecore-imf
+Description: E core library, IMF module
+Requires.private: ecore >= 1.6.99 eina >= 1.6.99 escape 
+Version: 1.7.99.0
+Libs: -L${libdir} -lecore_imf
+Cflags: -I${includedir}/ecore-1

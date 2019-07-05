@@ -1,0 +1,17 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+modules=/usr/local/ps3dev/portlibs/ppu/lib/edje/modules
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}/edje
+vmaj=1
+multisense=no
+
+Name: edje
+Description: Enlightened graphical design and layout engine.
+Requires.private: ecore-imf-evas >= 1.6.99 ecore-imf >= 1.6.99 lua embryo >= 1.6.99 ecore-evas >= 1.6.99 ecore >= 1.6.99 evas >= 1.6.99 eet >= 1.6.99 eina >= 1.6.99 
+Version: 1.7.99.0
+Libs: -L${libdir} -ledje
+Libs.private: 
+Cflags: -I${includedir}/edje-1

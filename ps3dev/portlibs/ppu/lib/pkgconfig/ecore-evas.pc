@@ -1,0 +1,11 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: ecore-evas
+Description: E core library, Evas module
+Requires.private: ecore-psl1ght >= 1.6.99 ecore-psl1ght >= 1.6.99 ecore-sdl >= 1.6.99 ecore-sdl >= 1.6.99 ecore-input >= 1.6.99 ecore-input-evas >= 1.6.99 evas >= 1.6.99 ecore >= 1.6.99 eina >= 1.6.99 escape 
+Version: 1.7.99.0
+Libs: -L${libdir} -lecore_evas
+Cflags: -I${includedir}/ecore-1

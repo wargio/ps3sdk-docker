@@ -1,0 +1,12 @@
+prefix=/usr/local/ps3dev/portlibs/ppu
+exec_prefix=${prefix}
+libdir=/usr/local/ps3dev/portlibs/ppu/lib
+includedir=/usr/local/ps3dev/portlibs/ppu/include
+
+Name: evas
+Description: Evas canvas display library
+Requires.private: libpng eet >= 1.6.0 eet >= 1.4.0 sdl fontconfig freetype2 eina >= 1.6.0 
+Version: 1.7.99.0
+Libs: -L${libdir} -levas -L/usr/local/ps3dev/portlibs/ppu/lib -leina -lescape -lm -lnet -lsysmodule -liberty   
+Libs.private: -liberty   -lGL -lEGL -lstdc++ -lm
+Cflags: -I${includedir}/evas-1
