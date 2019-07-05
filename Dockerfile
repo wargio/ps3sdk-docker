@@ -1,7 +1,7 @@
 FROM archlinux/base:latest
 
 RUN pacman -Syyuu --noconfirm
-RUN pacman -S --noconfirm bash nvidia-cg-toolkit tar gzip
+RUN pacman -S --noconfirm bash
 
 RUN echo "## Exporting ps3dev environment" >> /root/.bashrc
 RUN echo "export PS3DEV=/usr/local/ps3dev" >> /root/.bashrc
