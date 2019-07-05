@@ -34,3 +34,9 @@ git clone --single-branch --branch master --depth=1 https://github.com/wargio/ps
 docker build --rm . -t ps3sdk:complete
 ```
 
+## Issues with libiberty.a being x86_x64
+
+I had to rebuild the `libiberty.a` because it was `x86_x64` instead of `powerpc64`.
+
+Both SDK contains the correct version of it.
+
